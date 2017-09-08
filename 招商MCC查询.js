@@ -52,12 +52,10 @@ function search() {
 	var number = $("input").text
 	var isValid = true
 	var name = ""
-	for (var [key, value] of dic) {
-		if (key == number) {
-			isValid = false,
-			name = value,
-			break
-		}
+	
+	if (Object.keys(dic).includes(number)) {
+		name = dic[number]
+		isValid = false
 	}
 
 	if (isValid) {
