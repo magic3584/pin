@@ -33,7 +33,7 @@ $ui.render({
 			},
 			layout: function(make) {
 				make.top.equalTo(10)
-				make.right.equalTo(10)
+				make.right.equalTo(-10)
 				make.width.equalTo(100)
 				make.height.equalTo(30)
 				make.left.equalTo($("input").right).offset(10)
