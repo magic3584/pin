@@ -60,8 +60,8 @@ function search() {
 		}
 	}
 
-	if (isValid) {
-		$ui.alert("有效bianhao")
+	if (isValid == true) {
+		$ui.alert("有效编号")
 	} else {
 		$ui.alert("无效编号：" + number + "\n" + "无效类型：" + name)
 	}
