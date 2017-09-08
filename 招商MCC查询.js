@@ -53,14 +53,14 @@ function search() {
 	var isValid = true
 	var name = ""
 	for (var [key, value] of dic) {
-		if key == number {
+		if (key == number) {
 			isValid = false,
 			name = value,
 			break
 		}
 	}
 
-	if (isValid == true) {
+	if (isValid) {
 		$ui.alert("有效编号")
 	} else {
 		$ui.alert("无效编号：" + number + "\n" + "无效类型：" + name)
